@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Domestic Violence App</title>
+  <link rel="shortcut icon" href="images/Icon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.5.js"></script>
+  <script src="jQuery.ui.datepicker.js"></script>
+  <script src="jQuery.ui.datepicker.mobile.js"></script>
+  <script src="cordova.js"></script>
+  <link rel="stylesheet" href="js/leaflet.css" />
+  <script src="js/leaflet.js"></script>
+  <script src="js/javascript.js"></script>
+  <link rel="stylesheet" href="css/Style.css"/>
+
+</head>
+
+<body>
+
+  <!-- /NavBar & PageOne (HomePage) -->
+
+  <div data-role="page" id="PageOne" data-theme="a">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#outside" data-role="button" data-icon="bars" data-iconpos="left">Menu</a>
+      <h1>Domestic Violence App </h1>
+      <a href="#pagesix" data-role="button" data-icon="info" data-iconpos="left">About US</a>
+    </div>
+
+    <!-- /PageOne (HomePage) -->
+
+    <div data-role="content">
+      <h2 style="background-color:grey">What is Domestic Violence ?</h2>
+      <div id="slideshow">
+
+        <div>
+          <img src="images/break.jpg" id="image">
+        </div>
+        <div>
+          <img src="images/download.jpg" id="image">
+        </div>
+        <div>
+          <img src="images/hand.jpg" id="image">
+        </div>
+        <div>
+          <img src="images/stop.jpg" id="image">
+        </div>
+      </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <h4> In a relationship, there are ups and downs, sometimes we say and do things to each other that are
+        not nice. But there is a difference between normal arguing and abusive fighting behaviour in the
+        home which is called <b>Domestic Violence</b>.
+
+        <b>Abuse</b> is when one person hurts or bullies another person.
+        Hence,<b> Domestic Violence</b> is when this abuse happens between two people in a family or between 2 people
+        who are staying/living together married or have children together.
+
+        <h4>Sometimes a member of the family can be the abuse i.e <b>(mother, brother, sister, grand parent, foster parent).</b></h4>
+
+        <p class="a">Domestic Violence normally happens to women but it can also happen to men.</p>
+
+        <h4> Different kinds of physical abuse that can be part of domestic violence are: </h4>
+        <div data-role="collapsible" data-theme="b">
+          <h2>Physical Abuse</h2>
+          <ul data-role="listview" data-inset="false">
+            <li><b>Hitting</b></li>
+            <li><b>Pushing</b></li>
+            <li><b>Slapping</b></li>
+          </ul>
+        </div>
+
+
+        <h4>Domestic Violence is about one person thinking he/she can control the other person and can
+          include many different types of abuse like:</h4>
+
+        <div data-role="collapsible" data-theme="b">
+          <h2>Verbal Abuse</h2>
+          <ul data-role="listview" data-inset="false">
+            <li><b>Shouting</b></li>
+            <li><b>Emotional Abuse</b></li>
+            <li><b>Calling them names</b></li>
+          </ul>
+        </div>
+
+    </div>
+
+    <!-- /Footer -->
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#pageseven" data-icon="location"></a></li>
+          <li><a href="#PageOne" class="ui-btn-active ui-state-persist" data-icon="home"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /PageTwo (Educational Materials) -->
+
+  <div id="pagetwo" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#outside" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
+      <h1>Educational Materials</h1>
+      <a href="#pagesix" class="ui-btn ui-icon-info ui-btn-icon-left">About Us</a>
+    </div>
+
+    <div data-role="content">
+      <h2 style="background-color:grey">Below are some educational materials provided by the Domestic Violence App.</h2>
+
+      <br>
+
+      <!-- /PageTwo (Laws) -->
+
+      <div data-role="collapsible" data-theme="b" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+        <h3>Laws</h3>
+        <h2 style="background-color:grey;">What does the law provide to protect you against Domestic Violence ?</h2>
+
+        <ul class="b">
+          <li><b>Laws exist</b> to protect you your children or any person living under the same roof from violence or threat of violence.</li>
+          <li>Domestic Violence is a <b>criminal offence</b> thus you can <b>file a complaint</b> at a police station and if you have suffered injury such as wounds and blows you have to <b>fill a legal form PF 58.</b></li>
+          <li>Then it is required to attend the nearest hospital for a <b>medical examination.</b></li>
+          <li>Following the complaints an <b>inquiry</b> will be carried out and <b>legal proceedings</b> will be initiated against the perpetrator of violence <b>(abuser).</b></li>
+          <li>If you<b> do not want to file a complaint </b>you can always contact the police for assistance in case of emergency.</li>
+          <li>If you’ve been abused or fear domestic violence please call on the <b>Hot Line - 119 (Toll Free Number)</b>.</li>
+        </ul>
+
+        <hr>
+        <h2 style="background-color:red;">Hot Line - 119 (Toll Free Number)</h2>
+        <hr>
+        <ul class="c">
+          <li>You may call for help at the <b>FSB closest</b> to your place of residence.</li>
+          <li>A <b>liaison officer</b> will provide you with first hand counselling and refer you to a <b>Family Welfare</b> and <b>Protection Officer.</b></li>
+          <li>In case you wish to <b>apply for a Protection Order</b>, you will be requested to <b>swear an affidavit</b> and
+            you will be escorted by the officer to the <b>District Magistrates Chambers</b> where an order will be issued providing you with the protection you need.</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <!-- /PageTwo (Existing Protections) -->
+
+      <div data-role="collapsible" data-theme="b">
+        <h3>Existing Protections</h3>
+        <h2 style="background-color:grey;">What are the existing protections under the Protection from Domestic Violence Act (PDVA)?</h2>
+
+        <h4> You can apply for the following at a <b>District Court:</b></h4>
+        <ul class="c">
+          <li><b>A Protection Order</b></li>
+          <li><b>An Occupation Order</b></li>
+          <li><b>A Tenancy Order</b></li>
+          <li><b>An Interim Order</b></li>
+
+          <hr>
+
+          <div data-role="collapsible" data-theme="b">
+            <h3>What is a Protection Order ?</h3>
+            <h4>A protection order is an order of restraint against the person it has been issued preventing him/her from continuing to adopt violent behaviour/conduct.
+              The court can also order that perpetrator to stop harassing, contacting, intimidating and threatening the victim at his/her place of residence, place of work or any other venue.</h4>
+          </div>
+
+          <div data-role="collapsible" data-theme="b">
+            <h3>What is an Occupation Order ?</h3>
+            <h4>It is an order of the court providing to the aggrieved spouse, the exclusive right of residence in the house which may belong to the victim or the perpetrator or to both parties.
+              An occupation order cannot be sought against a party who does not reside under the same roof even if the latter is the owner of the residence.</h4>
+          </div>
+
+          <div data-role="collapsible" data-theme="b">
+            <h3>What is a Tenancy Order ?</h3>
+            <h4>Where the place of residence is rented and is the site where violence is inflicted, the court may at the request of one of the spouses, victim of violence, order that the rented
+              accommodation be conferred to the victim. This order may be promulgated if the perpetrator resides under the same roof and enjoys rights as tenant.</h4>
+          </div>
+
+          <div data-role="collapsible" data-theme="b">
+            <h3>What is an Interim Order ?</h3>
+            <h4>The court can issue an Interim Protection Order, an Interim Occupation Order or an Interim Order in an event characterized by a significant risk of continued infliction of violence which
+              may arise before the case is heard in the court. The interim orders are issued by the District Court on the same day the request is formulated.</h4>
+          </div>
+
+          <hr>
+
+          <div data-role="collapsible" data-theme="b">
+            <h3>If the prepetrator doesn`t respect the court order ?</h3>
+            <h4>Where an individual <b>fails</b> to respect an interim, tenancy or an Ancillary order of the court, he is liable to a <b>fine not exceeding Rs 25,000</b> or <b>to imprisonment for a period
+                not exceeding 2 years.</b>
+              Please call the police station closest to your place of residence whenever the perpetrator refuses to adhere to the court order.</h4>
+          </div>
+
+          <div data-role="collapsible" data-theme="b">
+            <h3>Right of Appeal under the Protection from Domestic Violence Act !</h3>
+            <h4>The law provides for <b>a right of appeal</b> in connection with the protection, occupation or tenancy order in front of the judge in Chambers. No right of appeal shall lie against an Interim Protection,
+              Interim Occupation, or Interim Tenancy orders.</h4>
+          </div>
+
+          <hr>
+      </div>
+
+      <hr>
+
+      <!-- /PageTwo (Family Welfare & Protection Officers) -->
+
+      <div data-role="collapsible" data-theme="b" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
+        <h3>Family Welfare & Protection Officers</h3>
+        <h2 style="background-color:grey;">Who are the Family Welfare and Protection officers and how can they help the victims?</h2>
+        <h4>You can obtain the <b>help</b> and <b>support</b> you need by contacting <b>one of the Family Welfare and Protection officers
+            of the Ministry of Women’s Rights, Child Development and Family Welfare</b> through the FSB closest
+          to your place of residence. The Family Welfare and Protection officers may help you by:</h4>
+        <ul class="d">
+          <li>Providing you with information on your rights to protection against domestic violence.</li>
+          <li>Taking you to a place of safety.</li>
+          <li>Assisting you in seeking treatment at hospital.</li>
+          <li>Helping in lodging your complaint at District Court level.</li>
+          <li>Where necessary, to accompany you to collect your personal belongings at your place of residence.</li>
+          <li>With your permission, the Family Welfare and Protection Officers can file a request on your behalf for a protection, occupation or tenancy order.</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <!-- /PageTwo (Who benefits from a protetcion ?) -->
+
+      <div data-role="collapsible" data-theme="b">
+        <h3>Who benefits from a protetcion ?</h3>
+        <h2 style="background-color:grey;">Who benefits from a protection under the Protection from Domestic Violence?</h2>
+
+        <ul class="a">
+          <li><b>Spouses</b></li>
+        </ul>
+
+        <ul class="b">
+          <li>Whether civilly or religiously married to each other.</li>
+          <li>Living or having lived together as husband and wife.</li>
+          <li>Having lived together or not and who are the parents of the same child</li>
+        </ul>
+
+        <ul class="a">
+          <li><b> A child of one of the spouses whether he/she is:</b></li>
+        </ul>
+
+        <ul class="b">
+          <li>Biological</li>
+          <li>Adopted</li>
+          <li>Placed in adoption (that is in the process of being adopted)</li>
+          <li>Step-daughter or step-son</li>
+          <li>Under the custody and care of one spouse</li>
+        </ul>
+
+        <ul class="a">
+          <li><b> Any person living under the same roof.</b></li>
+        </ul>
+      </div>
+      <hr>
+      <br>
+
+      <div>
+        <img src="Images/speak.jpg" id="chart" />
+      </div>
+
+
+    </div>
+    <!-- /Footer -->
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#pageseven" data-icon="location"></a></li>
+          <li><a href="#PageOne" data-icon="home"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /PageThree (Description) -->
+
+   <div id="pagethree" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#outside" data-role="button" data-icon="bars" data-iconpos="left">Menu</a>
+      <h1>Share Your Stories </h1>
+      <a href="#pagesix" data-role="button" data-icon="info" data-iconpos="left">About US</a>
+    </div>
+
+    <div class="content" data-role="content">
+      <center>
+        <h3>What's your Stories?</h3>
+      </center>
+        <form method="post" onSubmit="return submitForm()">
+          <label class="ui-hidden-accessible">Name</label><input name="name" type="text" placeholder="name" />
+          <label class="ui-hidden-accessible">Storyline</label><input name="storyline" type="text" placeholder="storyline" />
+          <input type="submit" value="submit" />
+
+        </form>
+      </div>
+
+      <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#pageseven" data-icon="location"></a></li>
+            <li><a href="#PageOne" data-icon="home"></a></li>
+          </ul>
+        </div>
+      </div>
+
+    <div data-role="page" id="pageeight">
+      <div data-role="header">
+        <h1>story Details</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+
+        <div id="output">
+          <ul data-role="listview" id="resultList"></ul>
+        </div>
+
+      </div>
+    <!-- /Footer -->
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#pageseven" data-icon="location"></a></li>
+          <li><a href="#PageOne" data-icon="home"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  < /PageFour (Emergency) -->
+
+  <div id="pagefour" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#outside" data-role="button" data-icon="bars" data-iconpos="left">Menu</a>
+      <h1>Emergency</h1>
+      <a href="#pagesix" data-role="button" data-icon="info" data-iconpos="left">About Us</a>
+    </div>
+
+    <div data-role="content">
+      <div>
+        <h1>Contact US</h1>
+        <p>If you are thinking about suicide or experiencing a personal crisis help is available.
+          No one needs to face their problems alone.</p>
+      </div>
+
+      <table data-role="table" id="table-custom-2" class="ui-body-d ui-shadow table-stripe ui-responsive">
+        <thead>
+          <tr>
+            <th>Family Protection Units</th>
+            <th>Contact Numbers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Port Louis (Head Office)</td>
+            <td><a href="tel:2102116" data-rel="external">210 2116</td>
+          </tr>
+          <tr>
+            <td>Trou Fanfaron</td>
+            <td><a href="tel:2173379" data-rel="external">217 3379</td>
+          </tr>
+          <tr>
+            <td>Piton</td>
+            <td><a href="tel:2649133" data-rel="external">264 9133</td>
+          </tr>
+          <tr>
+            <td>Moka</td>
+            <td><a href="tel:4332289" data-rel="external">433 2289</td>
+          </tr>
+          <tr>
+            <td>Rose Belle</td>
+            <td><a href="tel:6272840" data-rel="external">627 2840</td>
+          </tr>
+          <tr>
+            <td>Rose Hill</td>
+            <td><a href="tel:4662212" data-rel="external">466 2212</td>
+          </tr>
+          <tr>
+            <td>Vacoas</td>
+            <td><a href="tel:6964058" data-rel="external">696 4058</td>
+          </tr>
+          <tr>
+            <td>Flacq</td>
+            <td><a href="tel:4132935" data-rel="external">413 2935</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- /Footer -->
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#pageseven" data-icon="location"></a></li>
+          <li><a href="#PageOne" data-icon="home"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /PageFive (Resources) -->
+  <div id="pagefive" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#outside" data-role="button" data-icon="bars" data-iconpos="left">Menu</a>
+      <h1>Resources </h1>
+      <a href="#pagesix" data-role="button" data-icon="info" data-iconpos="left">About US</a>
+    </div>
+
+    <div data-role="content">
+<h2 style="background-color: grey;">Survivors of Domestic Violence</h2>
+<p>Domestic violence can be so easy for people to ignore, as it often happens without any witnesses
+  and it is sometimes easier not to get involved. Yet, by publicly speaking out against domestic violence,
+  together we can challenge attitudes towards violence in the home and show that domestic violence is a crime and not merely unacceptable.</p>
+<p>The following videos do not represent endorsements by Application. We’ve included a variety of videos related to domestic violence and healthy
+  relationships that we hope will be interesting, useful resources for you.</p>
+      <main>
+      <section>
+        <div class="center">
+
+
+          <div id="YouTube-player"></div>
+
+          <div>
+
+              <button data-mini="true" data-inline="true" onclick="document.getElementById('YouTube-video-id').value='V1yW5IsnSjo'; youTubePlayerChangeVideoId();" title="Why domestic violence victims don't leave | Leslie Morgan Steiner">Video 1</button>
+              <button data-mini="true" data-inline="true" onclick="document.getElementById('YouTube-video-id').value='5CnxqgVZJm4'; youTubePlayerChangeVideoId();" title="Esther Perel explains why couples fight |SVT/TV 2/Skavlan">Video 2</button>
+              <button data-mini="true" data-inline="true" onclick="document.getElementById('YouTube-video-id').value='h_Xh5MXA7yY'; youTubePlayerChangeVideoId();" title="Fighting forced marriages and honour based abuse | Jasvinder Sanghera ">Video 3</button>
+              <button data-mini="true" data-inline="true" onclick="document.getElementById('YouTube-video-id').value='1X1MNvuRpdg'; youTubePlayerChangeVideoId();" title="America's forced marriage problem | Fraidy Reiss">Video 4</button>
+              <button data-mini="true" data-inline="true" onclick="document.getElementById('YouTube-video-id').value='NDWk-rKRTCs'; youTubePlayerChangeVideoId();" title="Domestic abuse: It’s time to stop suffering in silence | Marie Hanson">Video 5</button>
+              <button data-mini="true" data-inline="true" onclick="document.getElementById('YouTube-video-id').value='TR70hzu5sXQ'; youTubePlayerChangeVideoId();" title="Battered Not Broken: The journey of redemption after abuse | Marica Phipps">Video 6</button>
+              <button data-mini="true" data-inline="true" onclick="document.getElementById('YouTube-video-id').value='5609_5FRjhY'; youTubePlayerChangeVideoId();" title="Why I stayed, Why I left | Mada Tsagia-Papadakou">Video 7</button>
+
+
+            <span class="nowrap margin-left-m margin-right-m">
+              <input id="YouTube-video-id"  value="V1yW5IsnSjo" size="12" pattern="[_\-0-9A-Za-z]{11}" onchange="youTubePlayerChangeVideoId();">
+            </span>
+          </div>
+      </section>
+    </main>
+    </div>
+    <!-- /Footer -->
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#pageseven" data-icon="location"></a></li>
+          <li><a href="#PageOne" data-icon="home"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- /PageSix (About us) -->
+
+  <div id="pagesix" data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#outside" data-role="button" data-icon="bars" data-iconpos="left">Menu</a>
+      <h1> About us </h1>
+      <a href="#pagesix" data-role="button" data-icon="info" data-iconpos="left">About US</a>
+    </div>
+
+    <div data-role="content">
+      <h1> About Us </h1>
+
+      <p><b>Domestic Violence Application</b> is an app dedicated to supporting victims of crime and traumatic incidents in Mauritius.
+        Our purpose is to provide specialist help to support people to cope and recover to the point where they feel they are back on track with their lives.</p>
+
+      <p>We work closely with the government, the police,local authorities and others to achieve our vision –
+        a world where victims and witnesses are given the support they need and the respect they deserve.</p>
+
+      <p><b>Domestic Prevention Application</b> works with victims of crime and we put them at the heart of our organisation and the way we run our services. Our work,
+        our support and our voice is informed and shaped by them.</p>
+
+      <p>As an organisation, victims are our only focus, and over the years we have developed unrivalled expertise in their needs, aspirations and
+        their journey through the criminal justice system. </p>
+
+      <h1> Why Choose Us? </h1>
+
+      <h3>We're free of charge</h3>
+      <p>Our support services are free and continue for as long as you need our support.</p>
+
+      <h3> We’re here for you 24/7</h3>
+
+      <p>We’re here for you 24 hours a day, 7 days a week,
+        365 days a year through our Supportline.</p>
+
+      <h3>We’re specialists</h3>
+
+      <p>Our teams of highly-trained staff and volunteers provide a wide range of specialist services that
+        help people affected by all types of crime from burglary, hate crime, fraud and theft to domestic abuse,
+        child sexual exploitation and terrorism.</p>
+    </div>
+
+    <!-- /Footer -->
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#pageseven" data-icon="location"></a></li>
+          <li><a href="#PageOne" data-icon="home"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /PageSeven (Geo Location) -->
+
+  <body onload="javascript:init();">
+    <div id="pageseven" data-role="page" data-theme="a">
+      <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="#outside" data-role="button" data-icon="bars" data-iconpos="left">Menu</a>
+        <h1>Location</h1>
+        <a href="#pagesix" data-role="button" data-icon="info" data-iconpos="left">About Us</a>
+      </div>
+
+      <div data-role="content">
+        <div>
+          <h3> Family Support Bureaux </h3>
+          <p>Ask for help. You need to be informed and provided with the necessary support
+            to reach the appropriate decisions.</p>
+        </div>
+
+        <div id="map" style="height: 400px"></div>
+      </div>
+  </body>
+  <!-- /Footer -->
+
+  <div data-role="footer" data-position="fixed" data-theme="b">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageseven" data-icon="location"></a></li>
+        <li><a href="#PageOne" data-icon="home"></a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- /Menu -->
+
+  <div data-role="panel" id="outside" data-theme="b">
+    <ul data-role="listview" data-inset="true" data-divider-theme="a">
+      <li><a href="#PageOne">
+          <img src="images/home1.jpg">
+          <h1>Home</h1>
+        </a></li>
+      <li><a href="#pagetwo">
+          <img src="images/educa.jpg">
+          <h1>Educational</h1>
+          <h1>Materials</h1>
+        </a></li>
+      <li><a href="#pagethree">
+          <img src="images/report.jpg">
+          <h1>Your</h1>
+          <h1>Stories</h1>
+        </a></li>
+      <li><a href="#pagefour">
+          <img src="images/emergency.jpg">
+          <h1>Emergency</h1>
+        </a></li>
+      <li><a href="#pagefive">
+          <img src="images/resources.jpg">
+          <h1>Resources</h1>
+        </a></li>
+    </ul>
+  </div>
+
+
+</body>
+
+</html>
